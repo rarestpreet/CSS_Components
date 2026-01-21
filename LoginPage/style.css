@@ -1,0 +1,106 @@
+:root {
+    --bg: #0f0f0f;
+    --card: #161616;
+    --text: #ffffff;
+    --muted: #bdbdbd;
+    --border: #2a2a2a;
+    --purple: #8b5cf6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #1a1a1a, #0a0a0a);
+    color: var(--text);
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    background: linear-gradient(145deg, #181818, #0f0f0f);
+    border-radius: 20px;
+    padding: 28px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+}
+
+.loginForm input {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-size: 0.95em;
+}
+
+.loginForm a {
+    color: var(--muted);
+    font-size: 0.75em;
+    text-decoration: none;
+}
+
+button {
+    padding: 10px 22px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: #121212;
+    color: var(--text);
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+#loginBtn {
+    border-color: var(--purple);
+    color: var(--purple);
+}
+
+.textContainer {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 8px;
+    align-items: center;
+}
+
+.textContainer-P {
+    font-size: 0.75em;
+    text-align: center;
+    color: var(--muted);
+}
+
+.line {
+    height: 1px;
+    background: var(--border);
+    border-radius: 20px;
+}
+
+.btnContainer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.icon {
+    width: 22px;
+}

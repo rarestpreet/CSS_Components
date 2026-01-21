@@ -1,0 +1,30 @@
+button,
+input {
+    transition: all 0.25s ease;
+}
+
+input:focus {
+    border-color: var(--purple);
+    background: #141414;
+    outline: none;
+}
+
+button:hover {
+    background: var(--purple);
+    color: black;
+    transform: translateY(-2px);
+}
+
+#loginBtn:hover {
+    background: var(--purple);
+    color: black;
+}
+
+.loginForm a:hover {
+    color: var(--purple);
+    text-decoration: underline;
+}
+
+.authBtn:hover img {
+    filter: brightness(1.2);
+}

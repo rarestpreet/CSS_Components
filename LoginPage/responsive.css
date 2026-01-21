@@ -1,0 +1,24 @@
+@media (max-width:500px) {
+    .container {
+        max-width: 90%;
+        padding: 22px 18px;
+    }
+
+    .btnContainer {
+        flex-direction: column;
+        align-content: center;
+        width: 100%;
+    }
+
+    .btnContainer button {
+        width: 60%;
+        align-self: center;
+    }
+    button {
+        justify-content: center;
+    }
+
+    .textContainer {
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+}
