@@ -1,0 +1,15 @@
+@media (max-width: 810px) {
+    .linkbox{
+        display: none;
+    }
+    .buttonbox{
+        display: none;
+    }
+
+}
+
+@media (min-width: 810px) {
+    .menu{
+        display: none;
+    }
+}

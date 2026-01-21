@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #0f0f14;
+    font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 20px;
+    position: fixed;
+    top: 50px;
+    padding: 5px 20px;
+    font-size: 20px;
+    border-radius: 35px;
+    background-color: #f8f9fb;
+    border: 1.5px solid #7b2cff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 10px 25px rgba(123, 44, 255, 0.25);
+}
+
+#logo {
+    width: 65px;
+    animation: rotate 8s linear infinite;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    font-size: 1.1em;
+}
+
+#menubtn {
+    width: 30px;
+    align-self: center;
+}
+
+.menu p {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.logobox {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    gap: .3em;
+}
+
+.logobox p {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.linkbox {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    gap: .7em;
+}
+
+.link {
+    text-decoration: none;
+    color: #1a1a1a;
+    border-radius: 12px;
+    transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease;
+}
+
+.link:hover {
+    color: #7b2cff;
+    transform: scale(1.05);
+}
+
+.buttonbox {
+    display: flex;
+    align-items: center;
+}
+
+#loginbtn {
+    padding: 13px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.05em;
+    font-weight: 600;
+    background-color: #7b2cff;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+#loginbtn:hover {
+    background-color: #6520d6;
+    transform: scale(1.08);
+}
